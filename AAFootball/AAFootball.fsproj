@@ -139,8 +139,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <None Include="packages.config" />
-    <None Include="aafootball - Web Deploy %283%29.pubxml" />
-    <None Include="aafootball - FTP %283%29.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime">
