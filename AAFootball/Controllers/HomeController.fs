@@ -29,12 +29,21 @@ module Game =
             | A -> B
             | B -> A
         let league = 
+            [| "AC Milan"
+               "Leverkuesen"
+               "AnniSock"
+               "Fulgart"
+               "Liverpool"
+               "Cambridge United" |]
+
+(*
             [| "AnniSock"
                "Bayern Muenchen"
                "VfB Stuttgart"
                "Fulham"
                "Liverpool"
                "Cambridge United" |]
+*)
         let teamA = dicen(league.Length)
         let teamB = (teamA + dicen(league.Length - 1) + 1) % league.Length
 
