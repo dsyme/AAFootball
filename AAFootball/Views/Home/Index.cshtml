@@ -1,8 +1,19 @@
-@model IEnumerable<string>
+@model AAFootball.Controllers.Model
+<h1>AA Football Match of the Day</h1>
+<h3>Hello, welcome to Anna and Andreas' AA Football Website!</h3>
+<!--
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"><img src="@Model.ImageA"></div>
+        <div class="col-md-1"><img src="@Model.ImageB"></div>
+    </div>
+</div>
+-->
 <div class="jumbotron">
-    <h1>AA Football Match of the Day</h1>
-    @foreach (var text in Model)
-    {
+    <img src="@Model.ImageA"> <img src="@Model.ImageB">
+    @foreach (var text in Model.Events)
+{
         <h3>@text</h3>
     }
 </div>

@@ -17,7 +17,7 @@
     <TargetFrameworkProfile />
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
     <Name>AAFootball</Name>
-    <NameOfLastUsedPublishProfile>aafootball - FTP</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>aafootball - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -139,6 +139,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="aafootball - Web Deploy.pubxml" />
+    <None Include="aafootball - FTP.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime">
@@ -146,6 +148,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FSharp.Data">
+      <HintPath>..\packages\FSharp.Data.2.0.5\lib\net40\FSharp.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure">
